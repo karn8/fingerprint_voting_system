@@ -1,0 +1,405 @@
+
+/* General body styling */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #333;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* Header styles */
+header {
+	background-color: #003366; /* Navy blue */
+	color: #ffffff;
+	padding: 20px 0;
+	text-align: center;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 2.4em;
+}
+
+/* Navigation menu styles */
+nav {
+	background-color: #333;
+	width: 100%;
+	display: block;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul li {
+	margin: 0 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2em;
+	padding: 10px 20px;
+	display: block;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+	background-color: #0056b3;
+	border-radius: 5px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;  /* Adjust the height according to your design needs */
+    margin-bottom: 20px;  /* Adds some space between the image and the form */
+}
+
+.image-container img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 170px;
+    height: 170px;
+    object-fit: contain;  /* Keeps the image aspect ratio without cropping */
+    /* background-color: white; */
+}
+
+/* Main content and titles */
+main {
+	flex: 1;
+	text-align: center;
+	padding: 20px;
+}
+
+.title {
+	margin-bottom: 20px;
+}
+
+.title h2 {
+	font-size: 24px;
+	color: #003366;
+}
+
+.title p {
+	font-size: 16px;
+	color: #666;
+}
+
+/* Button container and image buttons */
+.button-container {
+	display: flex;
+	justify-content: center ;
+	gap: 20px;
+	flex-wrap: wrap;
+    position: relative;
+}
+
+.image-button {
+	position: relative;
+	width: 200px;
+	height: 250px; /* Adjust height to fit text below image */
+	background-size: cover;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: transform 0.3s ease-in-out;
+    margin-left: 850px;
+}
+
+.button-link {
+	position: absolute;
+	bottom: 10px; /* Position text at the bottom */
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
+	text-decoration: none;
+	background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button container and image buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-button {
+    position: relative;
+    width: 200px;
+    height: 220px; /* Adjusted height for image */
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Space for label */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button-link {
+    position: absolute;
+    bottom: 0; /* Position text right at the bottom */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text background */
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px 0; /* Padding for text area */
+}
+
+.button-link span {
+    display: block; /* Ensures text aligns nicely */
+}
+
+.image-button:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for buttons */
+@media (max-width: 600px) {
+    .image-button {
+        width: 90%; /* Larger buttons on smaller screens */
+        height: 180px; /* Adjust height accordingly */
+    }
+}
+
+.image-button:hover {
+	transform: scale(1.05);
+}
+
+/* Footer styles */
+footer {
+	background-color: #343A40; /* Dark gray */
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+	width: 100%;
+	flex-shrink: 0;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+	nav ul {
+    	flex-direction: column;
+	}
+
+	nav ul li {
+    	margin-bottom: 10px;
+	}
+
+	.image-button {
+    	width: 90%; /* Make buttons larger on small screens */
+    	height: auto; /* Adjust height dynamically */
+	}
+
+	.button-container {
+    	gap: 10px;
+	}
+}
+
+
+/* General form styling */
+form {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
+
+
+/* register */
+/* General form styling */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
+
+
+/* Additional styles specific to the biometric registration page */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"],
+input[type="file"],
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+}
+
+label {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Additional styles specific to the voting page */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+fieldset {
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+}
+
+legend {
+    font-size: 1.2em;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[type="button"] {
+    background-color: #007BFF; /* Blue */
+}
+
+button[type="button"]:hover {
+    background-color: #0056b3;
+}

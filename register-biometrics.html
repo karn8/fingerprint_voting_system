@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Biometrics - E-Voting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Register Biometrics for E-Voting</h1>
+    </header>
+    <main>
+        <div class="image-button" style="background-image: url('https://png.pngtree.com/png-vector/20230706/ourlarge/pngtree-fingerprint-icon-vector-png-image_7481811.png ');">
+            <!-- <a href="index.html" class="button-link"><span>Home</span></a> -->
+        </div>
+        <form id="biometricForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="aadhaarNumber">Aadhaar Number:</label>
+            <input type="text" id="aadhaarNumber" name="aadhaarNumber" required pattern="\d{12}" title="Enter 12-digit Aadhaar number">
+
+            <label for="biometricData">Biometric Data:</label>
+            <input type="file" id="biometricData" name="biometricData" accept="image/*" required>
+
+            <label for="deviceType">Device Type:</label>
+            <select id="deviceType" name="deviceType">
+                <option value="fingerprint">Fingerprint Scanner</option>
+                <option value="facial">Facial Recognition System</option>
+                <option value="iris">Iris Scanner</option>
+            </select>
+
+            <button type="submit">Register Biometrics</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 E-Voting System</p>
+    </footer>
+</body>
+</html>

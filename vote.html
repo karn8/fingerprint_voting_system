@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Election Voting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>General Election Voting</h1>
+    </header>
+    <main>
+        <form id="votingForm">
+            <label for="aadhaarNumber">Aadhaar Number:</label>
+            <input type="text" id="aadhaarNumber" name="aadhaarNumber" required pattern="\d{12}" title="Enter 12-digit Aadhaar number">
+
+            <label for="voteDate">Date Of Birth:</label>
+            <input type="date" id="voteDate" name="voteDate" required>
+
+            <fieldset>
+                <legend>Select a party to vote for:</legend>
+                <label><input type="radio" name="party" value="congress">Indian National Congress</label>
+                <label><input type="radio" name="party" value="bsp"> Bhartiye Janta Party</label>
+                <label><input type="radio" name="party" value="cpi"> Communist Party of India</label>
+                <!-- <label><input type="radio" name="party" value="csm"> C</label> -->
+                <label><input type="radio" name="party" value="nota"> NOTA (None of the Above)</label>
+            </fieldset>
+
+            <button type="button" onclick="scanFingerprint()">Scan Fingerprint</button>
+            <button type="submit">Cast Vote</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 E-Voting System</p>
+    </footer>
+    <script>
+        function scanFingerprint() {
+            // Placeholder for fingerprint scanning logic
+            alert('Fingerprint scanning initiated...');
+        }
+    </script>
+</body>
+</html>
